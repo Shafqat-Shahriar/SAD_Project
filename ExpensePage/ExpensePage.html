@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incomes</title>
+    <link rel="stylesheet" href="ExpensePage.css">
+</head>
+<body>
+
+<div class="dashboard">
+    <div class="sidebar">
+        <div class="logo">
+            <a href="#homepage">
+                <img src="logo.svg" alt="Logo">
+            </a>
+        </div>
+        <div class="user-info">
+            <img src="user-avatar.jpg" alt="User Avatar" width="50" height="50">
+            <h3>User</h3>
+        </div>
+        <div class="menu-list">
+            <span>Dashboard</span>
+            <span>Wallet</span>
+            <span>Financial Insight</span>
+            <span>Income</span>
+            <span>Expense</span>
+            <span>Settings</span>
+            <span>Logout</span>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="header">
+            <h1>Expenses</h1>
+        </div>
+        <div class="main-content">
+            <h2>Total Expense</h2>
+        </div>
+        <div class="content-box">
+            <div class="left-content">
+                <div class="input-grid">
+                    <input type="text" placeholder="Expense Title">
+                    <input type="text" placeholder="Expense Amount">
+                    <input type="date" placeholder="Enter a Date">
+                    <select>
+                        <option value="Money">Money</option>
+                        <option value="Bank">Bank</option>
+                        <option value="Bkash">Bkash</option>
+                    </select>
+                    <textarea placeholder="Add Description"></textarea>
+                    <button onclick="addExpense()">Add Expense</button>
+                </div>
+            </div>
+            <div class="right-content" id="expenseList">
+                <!-- Right content goes here -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="ExpenseScript.js"></script>
+</body>
+</html>
